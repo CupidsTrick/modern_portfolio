@@ -20,6 +20,28 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh; } }
+
+@media screen and (max-width: 500px) {
+  main#Home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 
@@ -31,9 +53,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/dist/img/background.jpeg);
-    background-attachment: fixed;
-    background-size: cover; }
+    background: url(/dist/img/background.jpeg); }
   body:after {
     content: '';
     position: absolute;
